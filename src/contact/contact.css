@@ -1,0 +1,65 @@
+.container{
+    width:50%;
+    margin: 0 auto;
+}
+.form{
+    width: 100%;
+    margin: auto;
+}
+.form_section{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.contact_img{
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    width: 30px;
+}
+
+.contact_button{
+    font-size:large;
+    border-radius:20px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background-color:purple;
+    font-family: yasai;
+}
+
+
+textarea{
+    width: 80%;
+    margin: auto;
+    border: solid 4px purple;
+    border-radius:20px;
+    font-family: yasai,arial;
+    font-size:large;
+}
+
+/* inputs */
+input{
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width:100%;
+    border-radius:20px;
+    border:none;
+    color:none;
+    font-size:large;
+    font-family: yasai;
+}
+input:focus{
+    outline: none;
+    border-bottom: 4px solid rgb(240, 112, 112);
+}
+input[placeholder]{
+    text-align: center;
+}
+
+@media screen and (max-width:780px){
+    .contact_img{
+        display:none;
+    }    
+}

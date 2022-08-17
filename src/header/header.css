@@ -1,0 +1,45 @@
+.header{
+    width: 100%;
+    background-color:purple;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width: 6%;
+}
+
+.header_heading{
+    color: white;
+}
+
+.Link{
+    color:none;
+}
+
+.ul_header{
+    display: flex;
+    flex-direction: row;
+    margin-right: 4%;
+}
+
+.ul_header li{
+    list-style: none;
+    color: white;
+    margin: 8px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px){
+    .ul_header{
+        display: flex;
+        flex-direction: column;
+        margin-right: 4%;
+    }
+    img{
+        width: 20%;
+    }
+}

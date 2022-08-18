@@ -98,7 +98,7 @@ export class Items extends React.Component {
                         </li>) 
                        }
                    </ul> 
-                : <h1 >you haven't selected any option'</h1>}
+                : <h1 >you haven't selected any option</h1>}
             </div>
         )
     }

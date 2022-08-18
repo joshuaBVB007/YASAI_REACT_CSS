@@ -12,11 +12,11 @@ export class About extends React.Component {
                     Inculcar el hábito de tomarlas es fundamental para cubrir los requerimientos nutricionales.</p>
                 </div>
 
-                <div>
+                <div className="galery">
                     <img className="about_img" src="/1.jpg" alt="about_one"/>
                     <img className="about_img" src="/2.jpg" alt="about_one"/>
                     <img className="about_img" src="/3.jpg" alt="about_one"/>
-                    <img className="about_img" src="/4.jpg" alt="about_one"/>
+                    <img className="about_img" src="/1.jpg" alt="about_one"/>
                     <img className="about_img" src="/5.jpg" alt="about_one"/>
                 </div>
 

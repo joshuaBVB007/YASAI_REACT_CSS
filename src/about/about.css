@@ -9,6 +9,18 @@
     border-radius:50%;
 }
 
+.galery{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 2%;
+}
+
+.galery img{
+    width: 30%;
+}
+
 .about_section_two{
     width:100%;
     display: flex;
@@ -31,5 +43,8 @@ p{
     }
     .about_section{
         width: 100%;
+    }
+    .galery img{
+        width: 50%;
     }
 }

@@ -8,7 +8,8 @@
 }
 
 .logo{
-    width: 6%;
+    width: 5%;
+    margin-left:2%;
 }
 
 .header_heading{
@@ -22,7 +23,7 @@
 .ul_header{
     display: flex;
     flex-direction: row;
-    margin-right: 4%;
+    margin-right: 6%;
 }
 
 .ul_header li{

@@ -4,25 +4,25 @@ import "./contact.css"
 export class Contact extends React.Component {
     render(){
         return(
-            <div class="container">
+            <div className="container">
                 <h1>I'm Contact</h1>
-                <div class="form">
-                    <div class="form_section">
-                        <img class="contact_img" src="/email.png" alt="email"/>
+                <div className="form">
+                    <div className="form_section">
+                        <img className="contact_img" src="/email.png" alt="email"/>
                         <input type="text" placeholder="correo?"/>
                     </div>
-                    <div class="form_section">
-                        <img class="contact_img" src="/llamada-telefonica.png" alt="llamada"/>
+                    <div className="form_section">
+                        <img className="contact_img" src="/llamada-telefonica.png" alt="llamada"/>
                         <input type="" placeholder="teléfono?"/>
                     </div>
-                    <div class="form_section">
-                        <img class="contact_img" src="/usuario.png" alt="usuario"/>
+                    <div className="form_section">
+                        <img className="contact_img" src="/usuario.png" alt="usuario"/>
                         <input type="" placeholder="usuario?"/>
                     </div>
-                    <div class="form_section">
+                    <div className="form_section">
                         <textarea placeholder="Escribe tu mensaje"/>  
                     </div>
-                    <button class="contact_button">Send</button>
+                    <button className="contact_button">Send</button>
                 </div>
                 <p> 
                     Located at: Viladecans The Style Outlets <br/>

@@ -6,7 +6,7 @@ export class Header extends React.Component {
     render(){
         return (
             <div className="header">
-                <img className="logo" src="/logo512.png" alt="place"/>
+                <img className="logo" src="/manzana_banana.png" alt="place"/>
                 <h1 className="header_heading">Yasai</h1>
                 <ul className="ul_header">
                     <Link className="Link" to="/about"><li>About</li></Link>

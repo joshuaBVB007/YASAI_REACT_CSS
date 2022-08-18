@@ -1,6 +1,7 @@
 import React from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase ,ref, onValue} from "firebase/database";
+import "./items.css"
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
@@ -80,20 +81,24 @@ export class Items extends React.Component {
 
     render(){
         return (
-            <div>
-                <h1>Hey</h1>
-                <button onClick={this.ponerFrutas}>Frutas</button>
-                <button onClick={this.ponerPostres}>Postres</button>
-                <button onClick={this.ponerSmoothies}>Smoothies</button>
+            <div className="frutas_container">
+                <h1>I'm Products</h1>
+                <div className="buttons_container">
+                    <button onClick={this.ponerFrutas}>Frutas</button>
+                    <button onClick={this.ponerPostres}>Postres</button>
+                    <button onClick={this.ponerSmoothies}>Smoothies</button>
+                </div>
                 { this.state.listaF.length>0  
-                ?  <ul>{ this.state.listaF.map((value) => 
-                        <li key={value.Nombre}>
+                ?  <ul className="ul_items">{ this.state.listaF.map((value) => 
+                        <li className="li_items" key={value.Nombre}>
                                 <h1>{value.Nombre}</h1>
-                                <img src={value.url} alt="img"></img>
+                                <img className="img_container" src={value.url} alt="img"></img>
+                                <button>add</button>
+                                <button>details</button>
                         </li>) 
                        }
                    </ul> 
-                : "No hay"}
+                : <h1 >you haven't selected any option'</h1>}
             </div>
         )
     }

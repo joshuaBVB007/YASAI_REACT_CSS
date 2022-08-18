@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "yasaibackend"
+  },
+  "targets": {
+    "yasaibackend": {
+      "hosting": {
+        "web": [
+          "yasaireact"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

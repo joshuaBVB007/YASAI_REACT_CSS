@@ -5,6 +5,7 @@ import { About } from './about/about.js';
 import { Location } from './location/location.js'; 
 import { Contact } from './contact/contact.js';
 import { Routes, Route } from "react-router-dom";
+import { NotFound } from "./not_found/not_found.js"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/products" element={<Items />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

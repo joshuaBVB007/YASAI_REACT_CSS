@@ -1,7 +1,8 @@
 import React from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase ,ref, onValue} from "firebase/database";
-import "./items.css"
+import "./items.css";
+import { Searcher } from "./../searcher/searcher.js";
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
@@ -88,6 +89,7 @@ export class Items extends React.Component {
                     <button onClick={this.ponerPostres}>Postres</button>
                     <button onClick={this.ponerSmoothies}>Smoothies</button>
                 </div>
+                <Searcher/>
                 { this.state.listaF.length>0  
                 ?  <ul className="ul_items">{ this.state.listaF.map((value) => 
                         <li className="li_items" key={value.Nombre}>

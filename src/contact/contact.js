@@ -9,15 +9,15 @@ export class Contact extends React.Component {
                 <div className="form">
                     <div className="form_section">
                         <img className="contact_img" src="/email.png" alt="email"/>
-                        <input type="text" placeholder="correo?"/>
+                        <input className="contact_input" type="text" placeholder="correo?"/>
                     </div>
                     <div className="form_section">
                         <img className="contact_img" src="/llamada-telefonica.png" alt="llamada"/>
-                        <input type="" placeholder="teléfono?"/>
+                        <input className="contact_input" type="" placeholder="teléfono?"/>
                     </div>
                     <div className="form_section">
                         <img className="contact_img" src="/usuario.png" alt="usuario"/>
-                        <input type="" placeholder="usuario?"/>
+                        <input className="contact_input" type="" placeholder="usuario?"/>
                     </div>
                     <div className="form_section">
                         <textarea placeholder="Escribe tu mensaje"/>  

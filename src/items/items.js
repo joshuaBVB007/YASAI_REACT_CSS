@@ -115,6 +115,9 @@ export function Items (){
                     ))}
                     </ul>
                 </div>
+                <div className="flaticon_container">
+                    <h2 className="flaticon">Thanks Flaticon for this icons</h2>
+                </div>
         </div>      
 }
  

@@ -9,6 +9,21 @@
     margin: auto;
 }
 
+.flaticon_container{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    background-color:purple;
+}
+
+.flaticon{
+    display:block;
+    margin: auto;
+    text-align: center;
+    color:white;
+}
+
 .search_container{
     position: relative;width:40%;
     margin:1% auto;

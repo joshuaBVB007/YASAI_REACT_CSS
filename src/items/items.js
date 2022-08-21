@@ -1,6 +1,7 @@
 import React from "react";
 import { initializeApp } from "firebase/app";
 import { getDatabase ,ref, onValue} from "firebase/database";
+import {useEffect, useState} from 'react';
 import "./items.css";
 import { Searcher } from "./../searcher/searcher.js";
 
@@ -12,7 +13,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
 
 // Initialize Realtime Database and get a reference to the service
 const db = getDatabase(app);
@@ -50,58 +50,72 @@ const starCountRef3 = ref(db, 'Productos/Smoothies');
                 console.log(objetoFirebase);
 });
 
-export class Items extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state={listaF:[]}
-        this.ponerFrutas=this.ponerFrutas.bind(this);
-        this.ponerPostres=this.ponerPostres.bind(this);
-        this.ponerSmoothies=this.ponerSmoothies.bind(this);
+export function Items (){
+
+    const [frutas, setFrutas]= useState([]);
+    const [tablaFrutas, setTablaFrutas]= useState([]);
+    const [busqueda, setBusqueda]= useState("");
+
+    const handleChange=e=>{
+        console.log("soy:"+e.target.value);
+        setBusqueda(e.target.value);
+        filtrar(e.target.value);
     }
 
-    ponerFrutas() {
-        console.log(lista_Frutas_Firebase.length)
-        this.setState({
-            listaF: lista_Frutas_Firebase
-        })
+    const filtrar=(terminoBusqueda)=>{
+        var resultadosBusqueda=tablaFrutas.filter((elemento)=>{
+            if(elemento.Nombre.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
+                return elemento;
+            }
+        });
+        setFrutas(resultadosBusqueda);
     }
 
-    ponerPostres() {
-        console.log(lista_Postres_Firebase.length)
-        this.setState({
-            listaF: lista_Postres_Firebase
-        })
+    const setConfig=(current_list) => {
+        if(current_list==="frutas"){
+            setFrutas(lista_Frutas_Firebase);
+            setTablaFrutas(lista_Frutas_Firebase);
+        }else if(current_list==="postres"){
+            setFrutas(lista_Postres_Firebase);
+            setTablaFrutas(lista_Postres_Firebase);
+        }else if(current_list==="smoothies"){
+            setFrutas(lista_Smoothies_Firebase);
+            setTablaFrutas(lista_Smoothies_Firebase);
+        }
     }
 
-    ponerSmoothies() {
-        console.log(lista_Smoothies_Firebase.length)
-        this.setState({
-            listaF: lista_Smoothies_Firebase
-        })
-    }
+    useEffect(()=>{
+        setFrutas(lista_Frutas_Firebase);
+        setTablaFrutas(lista_Frutas_Firebase);
+    },[])
 
-    render(){
-        return (
-            <div className="frutas_container">
+    return   <div className="App">
                 <h1>I'm Products</h1>
-                <div className="buttons_container">
-                    <button onClick={this.ponerFrutas}>Frutas</button>
-                    <button onClick={this.ponerPostres}>Postres</button>
-                    <button onClick={this.ponerSmoothies}>Smoothies</button>
+                <div className="search_container">
+                    <input
+                    className="search_input"
+                    value={busqueda}
+                    placeholder="Nombre producto?"
+                    onChange={handleChange}
+                    />
                 </div>
-                <Searcher/>
-                { this.state.listaF.length>0  
-                ?  <ul className="ul_items">{ this.state.listaF.map((value) => 
-                        <li className="li_items" key={value.Nombre}>
-                                <h1>{value.Nombre}</h1>
-                                <img className="img_container" src={value.url} alt="img"></img>
-                                <button>add</button>
-                                <button>details</button>
-                        </li>) 
-                       }
-                   </ul> 
-                : <h1 >you haven't selected any option</h1>}
-            </div>
-        )
-    }
+    
+                <div>
+                    <div className="buttons_container">
+                        <button onClick={()=>setConfig("frutas")} >Frutas</button>
+                        <button onClick={()=>setConfig("postres")} >Postres</button>
+                        <button onClick={()=>setConfig("smoothies")} >Smoothies</button>
+                    </div>
+                    <ul className="ul_items">
+                    {frutas && 
+                    frutas.map((usuario)=>(
+                        <li className="li_items" key={usuario.Nombre}>
+                            <h1>{usuario.Nombre} </h1>
+                            <img className="img_container" src={usuario.url} alt="alternativo"></img>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+        </div>      
 }
+ 

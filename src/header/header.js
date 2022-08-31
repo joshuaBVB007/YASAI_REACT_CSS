@@ -9,10 +9,11 @@ export class Header extends React.Component {
                 <img className="logo" src="/manzana_banana.png" alt="place"/>
                 <h1 className="header_heading">Yasai</h1>
                 <ul className="ul_header">
-                    <Link className="Link" to="/about"><li>About</li></Link>
-                    <Link to="/products"><li>Products</li></Link>
-                    <Link to="/contact"><li>Contact</li></Link>
-                    <Link to="/location"><li>Location</li></Link>
+                    <Link className="link" to="/about"><li>About</li></Link>
+                    <Link className="link" to="/products"><li>Products</li></Link>
+                    <Link className="link" to="/reservation"><li>Reservation</li></Link>
+                    <Link className="link" to="/contact"><li>Contact</li></Link>
+                    <Link className="link" to="/location"><li>Location</li></Link>
                 </ul>
             </div>
         )

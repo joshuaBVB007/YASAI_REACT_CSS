@@ -1,0 +1,21 @@
+.toolbar{
+    /* al no tener un elemnto padre asignado esta usando el body */
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    position: fixed;
+    width: 5%;
+    top: 20%;
+    left: 1%;
+    background-color:yellow;
+}
+.counter{
+    position: absolute;
+    bottom:10px;
+    right:-14px;
+    font-size:34px;
+}
+.toolbar_img{
+    display:block;
+    margin:10%;
+}

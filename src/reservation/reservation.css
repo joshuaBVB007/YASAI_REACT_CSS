@@ -1,0 +1,128 @@
+.reservation{
+    width: 100%;
+}
+.reservation_area{
+    position: relative;
+    margin: auto;
+    width: 30%;
+    background-color:pink;
+}
+.reservation_img{
+    display: block;
+    margin: auto;
+    width:100%;
+}
+
+.reservation_area button{
+    background-color:purple;
+    color:white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    font-size:large;
+}
+
+.reservation_area button:hover{
+    background-color:yellow;
+    color:black;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    font-size:large;
+}
+
+/* Botones de la izquierda */
+.btn_reservation_left_uno{
+    position: absolute;
+    top: 11%;
+    left: 10%;
+}
+.btn_reservation_left_dos{
+    position: absolute;
+    top: 27.4%;
+    left: 10%;
+}
+.btn_reservation_left_tres{
+    position: absolute;
+    top: 44%;
+    left: 10%;
+}
+.btn_reservation_left_cuarto{
+    position: absolute;
+    top: 60.6%;
+    left: 10%;
+}
+.btn_reservation_left_quinto{
+    position: absolute;
+    top: 78%;
+    left: 10%;
+}
+/* Botones de la derecha */
+.btn_reservation_right_uno{
+    position: absolute;
+    top: 11%;
+    right: 10%;
+}
+.btn_reservation_right_dos{
+    position: absolute;
+    top: 27.4%;
+    right: 10%;
+}
+.btn_reservation_right_tres{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+}
+.btn_reservation_right_cuarto{
+    position: absolute;
+    top: 60.6%;
+    right: 10%;
+}
+.btn_reservation_right_quinto{
+    position: absolute;
+    top: 78%;
+    right: 10%;
+}
+
+@media screen and (max-width:920px){
+    .reservation_area{
+        position: relative;
+        margin: auto;
+        width: 80%;
+    }
+    .reservation_area button{
+        background-color:purple;
+        color:white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        font-size:xx-large;
+    }
+}
+
+
+@media screen and (max-width:780px){
+    .reservation_area{
+        position: relative;
+        margin: auto;
+        width: 90%;
+        background-color:purple;;
+    }
+}
+
+@media screen and (max-width:420px){
+    .reservation_area{
+        position: relative;
+        margin: auto;
+        width: 100%;
+        background-color:purple;;
+    }
+    .reservation_area button{
+        background-color:purple;
+        color:white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        font-size:large;
+    }
+}

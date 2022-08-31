@@ -7,6 +7,10 @@
     align-items:center;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .logo{
     width: 5%;
     margin-left:2%;
@@ -16,10 +20,6 @@
     color: white;
 }
 
-.Link{
-    color:none;
-}
-
 .ul_header{
     display: flex;
     flex-direction: row;
@@ -27,10 +27,14 @@
 }
 
 .ul_header li{
-    list-style: none;
+    list-style-type: none;
     color: white;
     margin: 8px;
     font-weight: bold;
+}
+
+.ul_header li:hover{
+    text-decoration: underline white solid 4px;
 }
 
 

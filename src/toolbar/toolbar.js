@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 export function Toolbar(props){
         let navigate=useNavigate();
-        let hello="hola mundo"
 
         return(
             <div className="toolbar">

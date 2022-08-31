@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { NotFound } from "./not_found/not_found.js";
 import { Reservation } from "./reservation/reservation.js";
 import { Shopping } from "./shopping_bag/shopping.js";
+import { Details } from "./details/details.js";
 
 function App() {
   return (
@@ -15,7 +16,6 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<About />} />
-
         {/* Header links */}
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Items />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />
         {/* Focus Products */}
-        <Route path="/shopping" element={<Shopping />} />
+        <Route path="/details/:nombre" element={<Details />} />
         <Route path="/shopping/:lista" element={<Shopping />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

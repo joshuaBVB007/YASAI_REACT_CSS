@@ -6,6 +6,8 @@ import {useEffect, useState} from 'react';
 import "./items.css";
 import { Toolbar } from "../toolbar/toolbar";
 import { Shopping } from "../shopping_bag/shopping.js";
+import { useNavigate } from "react-router-dom";
+
 
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
@@ -42,9 +44,9 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Realtime Database and get a reference to the service
 const db = getDatabase(app);
-var lista_Frutas_Firebase=[];
-var lista_Postres_Firebase=[];
-var lista_Smoothies_Firebase=[];
+export var lista_Frutas_Firebase=[];
+export var lista_Postres_Firebase=[];
+export var lista_Smoothies_Firebase=[];
 
 const starCountRef = ref(db, 'Productos/Frutas');
                 onValue(starCountRef, (snapshot) => {
@@ -78,6 +80,7 @@ const starCountRef3 = ref(db, 'Productos/Smoothies');
 
 export function Items (){
 
+    let navigate =useNavigate();
     const [frutas, setFrutas]= useState([]);
     const [tablaFrutas, setTablaFrutas]= useState([]);
     const [busqueda, setBusqueda]= useState("");
@@ -141,7 +144,10 @@ export function Items (){
                                 setCounter(contador + 1);
                                 lista_dela_compra.push(usuario.Nombre)
                                 addToList(lista_dela_compra)
-                            }}>click</button>
+                            }}>Add to cart</button>
+                            <button onClick={ ()=> {
+                                    navigate(`/details/${usuario.Nombre}`)
+                            }}>See details</button>
                         </li>
                     ))}
                     </ul>

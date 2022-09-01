@@ -23,7 +23,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />
         {/* Focus Products */}
-        <Route path="/details/:nombre" element={<Details />} />
+        <Route path="/details/:nombre/:categoria/:precio" element={<Details />} />
+        <Route path="/shopping" element={<Shopping />} />
         <Route path="/shopping/:lista" element={<Shopping />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

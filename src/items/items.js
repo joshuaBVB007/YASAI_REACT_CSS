@@ -25,26 +25,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// // Cloud Messaging
-// const messaging = getMessaging(app);
-// getToken(messaging,
-//      { vapidKey: 'BN8D4tfn5MD7qk2s3piwk2mVaa7WpMJO9n5tfyh0yyBgbYkVFkF4BKicWJfh0dj2tSSQ2TVPdILba3F3xZPnj_c' })
-//      .then((currentToken) => {
-//             if (currentToken) {
-//                 console.log("El token es"+currentToken)
-//             } else {
-//                 // Show permission request UI
-//                 console.log('No registration token available. Request permission to generate one.');
-//             }
-// }).catch((err) => {
-//   console.log('An error occurred while retrieving token. ', err);
-// });
-
-
 
 // Initialize Realtime Database and get a reference to the service
 const db = getDatabase(app);
-export var lista_Frutas_Firebase=[];
+export var lista_Frutas_Firebase=[] 
 export var lista_Postres_Firebase=[];
 export var lista_Smoothies_Firebase=[];
 
@@ -121,7 +105,7 @@ export function Items (){
                     <input
                     className="search_input"
                     value={busqueda}
-                    placeholder="Nombre producto?"
+                    placeholder="Product's name?"
                     onChange={handleChange}
                     />
                 </div>
@@ -130,8 +114,8 @@ export function Items (){
                     {/* dentro del toolbar hay un carrito con un contador por ello le pasamos un numero */}
                     <Toolbar counter={contador} comprados={lista_dela_compra} />
                     <div className="buttons_container">
-                        <button onClick={()=>setConfig("frutas")} >Frutas</button>
-                        <button onClick={()=>setConfig("postres")} >Postres</button>
+                        <button onClick={()=>setConfig("frutas")} >Fruits</button>
+                        <button onClick={()=>setConfig("postres")} >Desserts</button>
                         <button onClick={()=>setConfig("smoothies")} >Smoothies</button>
                     </div>
                     <ul className="ul_items">
@@ -146,7 +130,8 @@ export function Items (){
                                 addToList(lista_dela_compra)
                             }}>Add to cart</button>
                             <button onClick={ ()=> {
-                                    navigate(`/details/${usuario.Nombre}`)
+                                    console.log(frutas)
+                                    navigate(`/details/${usuario.Nombre}/${usuario.Categoria}/${usuario.Precio}`)
                             }}>See details</button>
                         </li>
                     ))}

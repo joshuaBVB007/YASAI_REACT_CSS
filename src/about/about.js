@@ -8,8 +8,10 @@ export class About extends React.Component {
             <div className="about">
                 <div className="about_section">
                     <img className="about_img" src="/manzana_banana.png" alt="about_one"/>
-                    <p>Las frutas y verduras son importantes para la salud porque aportan vitaminas, minerales y fibra.
-                    Inculcar el hábito de tomarlas es fundamental para cubrir los requerimientos nutricionales.</p>
+                    <p>Fruits and vegetables are important for health because 
+                    they provide vitamins, minerals and fiber. 
+                    Instilling the habit of taking them is essential
+                    to meet nutritional requirements</p>
                 </div>
 
                 <div className="galery">
@@ -23,18 +25,24 @@ export class About extends React.Component {
                 <div className="about_section_two">
                     <div className="card">             
                         <img className="about_img" src="/cereal.png" alt="about_one"/>
-                        <p>Las frutas y verduras son importantes para la salud porque aportan vitaminas, minerales y fibra.
-                        Inculcar el hábito de tomarlas es fundamental para cubrir los requerimientos nutricionales.</p>
+                        <p>Fruits and vegetables are important for health because 
+                    they provide vitamins, minerals and fiber. 
+                    Instilling the habit of taking them is essential
+                    to meet nutritional requirements</p>
                     </div>
                     <div className="card">             
                         <img className="about_img" src="/combine-harvester.png" alt="about_one"/>
-                        <p>Las frutas y verduras son importantes para la salud porque aportan vitaminas, minerales y fibra.
-                        Inculcar el hábito de tomarlas es fundamental para cubrir los requerimientos nutricionales.</p>
+                        <p>Fruits and vegetables are important for health because 
+                    they provide vitamins, minerals and fiber. 
+                    Instilling the habit of taking them is essential
+                    to meet nutritional requirements</p>
                     </div>
                     <div className="card">             
                         <img className="about_img" src="/vegetables.png" alt="about_one"/>
-                        <p>Las frutas y verduras son importantes para la salud porque aportan vitaminas, minerales y fibra.
-                        Inculcar el hábito de tomarlas es fundamental para cubrir los requerimientos nutricionales.</p>
+                        <p>Fruits and vegetables are important for health because 
+                    they provide vitamins, minerals and fiber. 
+                    Instilling the habit of taking them is essential
+                    to meet nutritional requirements</p>
                     </div>
                 </div>
             </div>

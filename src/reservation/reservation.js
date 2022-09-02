@@ -10,7 +10,7 @@ export class Reservation extends React.Component {
         render(){
             return(
                 <div className="reservation">
-                    <h1>I'm reservation</h1>
+                    <h1>I&#39m reservation</h1>
                     <h3>Click on the number to see details</h3>
                     <div className="reservation_area">
                         <img className="reservation_img" src="/indoor.png" alt="hahaha" />

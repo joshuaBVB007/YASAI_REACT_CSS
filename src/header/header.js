@@ -11,7 +11,7 @@ export class Header extends React.Component {
                 <ul className="ul_header">
                     <Link className="link" to="/about"><li>About</li></Link>
                     <Link className="link" to="/products"><li>Products</li></Link>
-                    <Link className="link" to="/reservation"><li>Reservation</li></Link>
+                    {/* <Link className="link" to="/reservation"><li>Reservation</li></Link> */}
                     <Link className="link" to="/contact"><li>Contact</li></Link>
                     <Link className="link" to="/location"><li>Location</li></Link>
                 </ul>

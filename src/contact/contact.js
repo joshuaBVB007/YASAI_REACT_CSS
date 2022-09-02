@@ -5,7 +5,7 @@ export class Contact extends React.Component {
     render(){
         return(
             <div className="container">
-                <h1>I'm Contact</h1>
+                <h1>I&#39;m Contact</h1>
                 <div className="form">
                     <div className="form_section">
                         <img className="contact_img" src="/email.png" alt="email"/>

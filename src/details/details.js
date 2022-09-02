@@ -35,7 +35,7 @@ export function Details(){
 
     return(
         <div>
-            <h1>I'm details</h1>
+            <h1>I&#39;m details</h1>
             { 
              value_to_show=Object.entries(params).length === 0 
              ? "No has seleccionado nada"

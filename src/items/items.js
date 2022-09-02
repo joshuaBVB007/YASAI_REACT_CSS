@@ -100,7 +100,7 @@ export function Items (){
     }
 
     return   <div className="App">
-                <h1>I'm Products</h1>
+                <h1>I&#39;m Products</h1>
                 <div className="search_container">
                     <input
                     className="search_input"

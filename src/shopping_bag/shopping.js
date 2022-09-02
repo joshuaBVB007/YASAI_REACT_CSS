@@ -9,7 +9,7 @@ export function Shopping() {
     console.log(params)
     return(
         <div className="shopping">
-            <h1>I'm shopping bag</h1>
+            <h1>I&#39;m shopping bag</h1>
             <h1>Tus productos seleccionados son: </h1>
             { 
              con=Object.entries(params).length === 0 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./toolbar.css"
 import { useNavigate } from "react-router-dom";
-
+import PropTypes from 'prop-types';
 
 export function Toolbar(props){
         let navigate=useNavigate();
@@ -19,3 +19,8 @@ export function Toolbar(props){
             </div>
         )
 }
+
+Toolbar.propTypes = {
+    comprados: PropTypes.array,
+    counter: PropTypes.number,
+};

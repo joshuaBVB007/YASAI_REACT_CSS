@@ -99,6 +99,11 @@ export function Items (){
         }
     }
 
+    const dragObject=(ev)=>{
+        ev.dataTransfer.setData("text", ev.target.id);
+        console.log("Funciona el arrastre")
+    }
+
     return   <div className="App">
                 <h1>I&#39;m Products</h1>
                 <div className="search_container">
@@ -112,7 +117,7 @@ export function Items (){
     
                 <div>
                     {/* dentro del toolbar hay un carrito con un contador por ello le pasamos un numero */}
-                    <Toolbar counter={contador} comprados={lista_dela_compra} />
+                    <Toolbar counter={contador}  comprados={lista_dela_compra} />
                     <div className="buttons_container">
                         <button onClick={()=>setConfig("frutas")} >Fruits</button>
                         <button onClick={()=>setConfig("postres")} >Desserts</button>

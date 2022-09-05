@@ -22,7 +22,7 @@ export class Contact extends React.Component {
                     <div className="form_section">
                         <textarea placeholder="Type your message"/>  
                     </div>
-                    <button className="contact_button">Send</button>
+                    <button onClick={ ()=> saveNewPerson() } className="contact_button">Send</button>
                 </div>
                 <p> 
                     Located at: Viladecans The Style Outlets <br/>

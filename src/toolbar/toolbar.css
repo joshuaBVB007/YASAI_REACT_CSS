@@ -6,8 +6,7 @@
     position: fixed;
     width: 5%;
     top: 20%;
-    left: 1%;
-    background-color:yellow;
+    /* background-color:yellow; */
 }
 .counter{
     position: absolute;
@@ -17,5 +16,19 @@
 }
 .toolbar_img{
     display:block;
-    margin:10%;
+    width:100%;
+    height:50px;
+}
+
+@media screen and (max-width:760px){
+    .toolbar{
+        position: fixed;
+        top: 50%;
+        width:14%;
+    }
+    .toolbar_img{
+        display:block;
+        width:80%;
+        margin: auto;
+    }
 }

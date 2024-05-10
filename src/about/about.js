@@ -1,9 +1,7 @@
-import React from 'react';
 import './about.css'
+import React from "react";
 
-
-export class About extends React.Component {
-    render() {
+function About() {
         return(
             <div className="about">
                 <div className="about_section">
@@ -47,5 +45,6 @@ export class About extends React.Component {
                 </div>
             </div>
         )
-    }
 }
+
+export default About;

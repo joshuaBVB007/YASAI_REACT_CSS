@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Header } from './header/header.js';
-import { Items } from './items/items.js';
-import { About } from './about/about.js';
-import { Location } from './location/location.js'; 
-import { Contact } from './contact/contact.js';
+import Header from './header/header.js';
+import Items  from './items/items.js';
+import About from './about/about.js';
+import Location  from './location/location.js'; 
+import  Contact  from './contact/contact.js';
 import { Routes, Route } from "react-router-dom";
-import { NotFound } from "./not_found/not_found.js";
-import { Reservation } from "./reservation/reservation.js";
-import { Shopping } from "./shopping_bag/shopping.js";
-import { Details } from "./details/details.js";
+import  NotFound  from "./not_found/not_found.js";
+import  Reservation  from "./reservation/reservation.js";
+import  Shopping  from "./shopping_bag/shopping.js";
+import  Details  from "./details/details.js";
 
 function App() {
   return (

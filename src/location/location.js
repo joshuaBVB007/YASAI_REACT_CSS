@@ -1,8 +1,7 @@
 import React from "react";
 import "./location.css"
 
-export class Location extends React.Component {
-    render(){
+function Location(){
         return(
             <div>
                 <iframe className="mapa"
@@ -12,5 +11,6 @@ export class Location extends React.Component {
                 </iframe>
             </div>
         )
-    }
 }
+
+export default Location;

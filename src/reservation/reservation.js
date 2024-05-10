@@ -2,15 +2,10 @@ import React from "react";
 import "./reservation.css"
 
 
-export class Reservation extends React.Component {
-        constructor(props) {
-            super(props);
-        }
-
-        render(){
+function Reservation(){
             return(
                 <div className="reservation">
-                    <h1>I&#39m reservation</h1>
+                    <h1>Im reservation</h1>
                     <h3>Click on the number to see details</h3>
                     <div className="reservation_area">
                         <img className="reservation_img" src="/indoor.png" alt="hahaha" />
@@ -29,5 +24,5 @@ export class Reservation extends React.Component {
                     </div>
                 </div>
             )
-        }
 }
+export default Reservation;

@@ -2,8 +2,7 @@ import React from "react";
 import "./header.css"
 import { Link } from "react-router-dom";
 
-export class Header extends React.Component {
-    render(){
+function Header(){
         return (
             <div className="header">
                 <img className="logo" src="/manzana_banana.png" alt="place"/>
@@ -17,5 +16,6 @@ export class Header extends React.Component {
                 </ul>
             </div>
         )
-    }
 }
+
+export default Header;

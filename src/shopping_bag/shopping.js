@@ -2,7 +2,7 @@ import React from "react";
 import "./shopping.css";
 import { useParams } from "react-router-dom";
 
-export function Shopping() {
+function Shopping() {
     let params = useParams();
     let con=undefined;
     
@@ -19,3 +19,5 @@ export function Shopping() {
         </div>
     )
 }
+
+export default Shopping;

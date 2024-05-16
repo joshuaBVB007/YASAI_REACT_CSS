@@ -1,6 +1,6 @@
 import React from "react";
 import "./contact.css"
-import Section from "./section";
+import Section from "./section.js";
 
 function Contact() {
 

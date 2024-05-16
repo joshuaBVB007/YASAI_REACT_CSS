@@ -1,50 +1,22 @@
-import './about.css'
 import React from "react";
+import "./about.css";
+import {imagenesGaleria,imagenesCard} from "../data/data.js";
+import ImageGallery from "../gallery/gallery.js";
+import CardSection from "./cardSection.js";
 
 function About() {
-        return(
-            <div className="about">
-                <div className="about_section">
-                    <img className="about_img" src="/manzana_banana.png" alt="about_one"/>
-                    <p>Fruits and vegetables are important for health because 
-                    they provide vitamins, minerals and fiber. 
-                    Instilling the habit of taking them is essential
-                    to meet nutritional requirements</p>
-                </div>
-
-                <div className="galery">
-                    <img className="about_img" src="/1.jpg" alt="about_one"/>
-                    <img className="about_img" src="/2.jpg" alt="about_one"/>
-                    <img className="about_img" src="/3.jpg" alt="about_one"/>
-                    <img className="about_img" src="/1.jpg" alt="about_one"/>
-                    <img className="about_img" src="/5.jpg" alt="about_one"/>
-                </div>
-
-                <div className="about_section_two">
-                    <div className="card">             
-                        <img className="about_img" src="/cereal.png" alt="about_one"/>
-                        <p>Fruits and vegetables are important for health because 
-                    they provide vitamins, minerals and fiber. 
-                    Instilling the habit of taking them is essential
-                    to meet nutritional requirements</p>
-                    </div>
-                    <div className="card">             
-                        <img className="about_img" src="/combine-harvester.png" alt="about_one"/>
-                        <p>Fruits and vegetables are important for health because 
-                    they provide vitamins, minerals and fiber. 
-                    Instilling the habit of taking them is essential
-                    to meet nutritional requirements</p>
-                    </div>
-                    <div className="card">             
-                        <img className="about_img" src="/vegetables.png" alt="about_one"/>
-                        <p>Fruits and vegetables are important for health because 
-                    they provide vitamins, minerals and fiber. 
-                    Instilling the habit of taking them is essential
-                    to meet nutritional requirements</p>
-                    </div>
-                </div>
-            </div>
-        )
+  return (
+    <div className="about">
+      <ImageGallery imagenes={imagenesGaleria} />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam ac odio tincidunt vehicula.
+        Integer ac nibh eu sapien tempus malesuada. Ut auctor nisi vel ante tristique,
+        a consequat justo feugiat. Quisque a arcu fermentum, facilisis lacus et,
+        condimentum nunc. Nullam ut neque vestibulum, vehicula nunc ac,
+        ullamcorper libero. Mauris et magna arcu. Nulla facilisi.
+        Duis euismod felis et luctus malesuada.
+      </p>
+      <CardSection images={imagenesCard}/>
+    </div>
+  );
 }
-
 export default About;

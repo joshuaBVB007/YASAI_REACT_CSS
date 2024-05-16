@@ -1,0 +1,22 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 20%;
+    padding: 2%;
+    background-color: purple;
+    border-radius: 20%;
+    color:white;
+}
+
+.card p{
+    font-size: small;
+    margin-bottom: 6px;
+}
+
+.card img{
+    display: block;
+    margin: auto;
+    width: 25%;
+}

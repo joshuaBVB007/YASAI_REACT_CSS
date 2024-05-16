@@ -1,23 +1,23 @@
 .toolbar{
-    /* al no tener un elemnto padre asignado esta usando el body */
-    position: relative;
     display:flex;
     flex-direction:column;
     position: fixed;
     width: 5%;
     top: 20%;
-    /* background-color:yellow; */
 }
 .counter{
     position: absolute;
-    bottom:10px;
-    right:-14px;
-    font-size:34px;
+    top: 0%;
+    left: 70%;
+    font-size:20px;
+    padding: 4px;
+    border: 4px solid black;
+    border-radius: 50%;
 }
 .toolbar_img{
     display:block;
-    width:100%;
-    height:50px;
+    width:60%;
+    margin: 10px;
 }
 
 @media screen and (max-width:760px){

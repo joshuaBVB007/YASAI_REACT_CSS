@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -12,6 +12,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    width: 20%;
     margin: 2%;
 }
 

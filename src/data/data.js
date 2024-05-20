@@ -41,7 +41,7 @@ export const imagenesProducts = [
     },
     {
         id: 4,
-        src: "/Products_photos/modified/kiwi.jpg",
+        src: "/Products_photos/modified/kiwii.jpg",
         name: "Kiwi",
         description: "El kiwi es una fruta de pulpa verde vibrante con un sabor agridulce. Es especialmente rico en vitamina C, incluso más que las naranjas, y también contiene vitamina K y vitamina E. El kiwi es conocido por mejorar la digestión debido a su alto contenido de fibra y la enzima actinidina. Además, su consumo regular puede ayudar a mejorar la calidad del sueño y la salud respiratoria."
     },
@@ -71,7 +71,7 @@ export const imagenesProducts = [
     },
     {
         id: 9,
-        src: "/Products_photos/modified/melocoton.jpg",
+        src: "/Products_photos/modified/melocotonn.jpg",
         name: "Melocotón",
         description: "El melocotón es una fruta de piel aterciopelada y pulpa jugosa, ideal para comer fresca o en almíbar. Es una excelente fuente de vitaminas A y C, así como fibra dietética. Los melocotones tienen propiedades antioxidantes que ayudan a combatir los daños causados por los radicales libres. Además, su consumo puede mejorar la salud digestiva y la piel, y contribuir a una mejor visión."
     }

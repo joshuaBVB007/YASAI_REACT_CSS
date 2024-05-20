@@ -71,7 +71,7 @@ export const imagenesProducts = [
     },
     {
         id: 9,
-        src: "/Products_photos/modified/Melocoton.jpg",
+        src: "/Products_photos/modified/melocoton.jpg",
         name: "Melocotón",
         description: "El melocotón es una fruta de piel aterciopelada y pulpa jugosa, ideal para comer fresca o en almíbar. Es una excelente fuente de vitaminas A y C, así como fibra dietética. Los melocotones tienen propiedades antioxidantes que ayudan a combatir los daños causados por los radicales libres. Además, su consumo puede mejorar la salud digestiva y la piel, y contribuir a una mejor visión."
     }

@@ -5,16 +5,13 @@ import ImageGallery from "../gallery/gallery.js";
 import CardSection from "./cardSection.js";
 
 function About() {
+
   return (
     <div className="about">
       <ImageGallery imagenes={imagenesGaleria} />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non diam ac odio tincidunt vehicula.
-        Integer ac nibh eu sapien tempus malesuada. Ut auctor nisi vel ante tristique,
-        a consequat justo feugiat. Quisque a arcu fermentum, facilisis lacus et,
-        condimentum nunc. Nullam ut neque vestibulum, vehicula nunc ac,
-        ullamcorper libero. Mauris et magna arcu. Nulla facilisi.
-        Duis euismod felis et luctus malesuada.
-      </p>
+      <p>Bienvenido a <strong>Yasai</strong>, tu destino en línea para explorar una amplia variedad de frutas frescas y exóticas.
+        En Yasai, nos dedicamos a ofrecerte las frutas más deliciosas y nutritivas, directamente desde los productores locales hasta tu mesa.
+        Nuestra misión es promover un estilo de vida saludable al proporcionarte frutas de alta calidad y de temporada.</p>
       <CardSection images={imagenesCard}/>
     </div>
   );

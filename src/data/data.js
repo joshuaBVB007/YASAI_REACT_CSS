@@ -13,7 +13,7 @@ export const imagenesCard=[
     {id:3,parrafo: `Fruits and vegetables are important for health because they provide vitamins, minerals and fiber. Instilling the habit of taking them is essential meet nutritional requirements`,
     source: "/vegetables.png"}
 ]
-
+//
 export const imagenesProducts = [
     {
         id: 0,
